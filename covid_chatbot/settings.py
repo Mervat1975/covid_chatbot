@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-$fein^0!_6@n#0$=azf+cbu$cac53zlpe!!#u35)(-%2h38#9t
 DEBUG = True
 
 ALLOWED_HOSTS = ['127.0.0.1',
-                 'covid_chatbot.herokuapp.com',
+                 'covid-chatbot-22.herokuapp.com',
                  ]
 
 
