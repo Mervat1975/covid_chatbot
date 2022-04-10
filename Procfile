@@ -1,1 +1,0 @@
-web: gunicorn covid_chatbot.wsgi:application --log-file -
