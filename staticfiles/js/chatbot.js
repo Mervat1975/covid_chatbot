@@ -86,6 +86,7 @@ $(document).ready(function () {
     });
 
     $("#sendmessage").click(function () {
+        console.log('ai_response')
         const value = $("#message").val();
 
         $.ajax({
@@ -97,100 +98,18 @@ $(document).ready(function () {
             data: JSON.stringify({ "message": value }),
             success: (response) => {
                 ai_response = ""
-                accept_flag = parseInt(response['message']['accept_flag'])
-                min_disc = parseFloat(response['message']['min_disc'])
-                max_disc = parseFloat(response['message']['max_disc'])
-                mid_disc = (min_disc + max_disc) / 2
-                amount = parseFloat(response['message']['amount'])
-                user_response = response['message']['user_response']
-                disc = 0
-                offer_no = parseInt(response['message']['offer_no'])
-                end_offer = false
-                if (min_disc > 0) {
-                    if (offer_no == 1) {
-                        ai_response += response['message']['text'];
-                        ai_response += ". It is our pleaser to offer you"
-                        disc = min_disc
-                    }
-                    else if (offer_no == 2 && !accept_flag) {
-                        if (user_response.toLowerCase().startsWith('n')) {
-                            ai_response += "Well, I have a better offer for you"
-                            disc = mid_disc
-                        }
-
-                    }
-                    else if (offer_no == 3 && !accept_flag) {
-                        if (user_response.toLowerCase().startsWith('n')) {
-                            ai_response += "This is the best offer I can give you"
-                            disc = max_disc
-                        }
-
-                    }
-                    else if (offer_no == 4 && !accept_flag) {
-                        if (user_response.toLowerCase().startsWith('n')) {
-                            ai_response = "Sorry this is the best Offer I could give you"
-                        }
-                        else {
-                            ai_response = response['message']['text'];
-                        }
 
 
-                    } else {
-                        ai_response = response['message']['text'];
+                ai_response += response['message']['text']
 
-                    }
-
-                    if (disc > 0) {
-                        tot = amount - (disc / 100 * amount)
-                        ai_response += " " + disc + "%  discount , the tatol amount will be :" +
-                            tot.toString() + " , are you happy with this offer?"
-                    }
-                    else {
-                        if (user_response.toLowerCase().startsWith('y')) {
-                            ai_response = " We are happy that we could help you today. "
-                            offer_no--
-                            if (offer_no == 1)
-                                disc = min_disc
-                            else if (offer_no == 2)
-                                disc = mid_disc
-                            else if (offer_no == 3)
-                                disc = max_disc
-                            end_offer = true
-                            console.log('offer_no', offer_no)
-                            tot = amount - (disc / 100 * amount)
-                            ai_response += "You got " + disc + "%  discount , the tatol amount is :" +
-                                tot.toString() + " Please complete the checkout process."
-                            $('#disc').html(disc.toString() + "%")
-                            $('#net').html(tot.toString() + " CAD")
-
-                        }
-
-
-                    }
-                }
-                else {
-                    ai_response += response['message']['text']
-                    ai_response += ".We are sorry, we can't give you any discount offer. No discount offers are available for this total amount"
-
-                }
+                console.log('ai_response', ai_response)
 
 
                 wait(1000)
                 $("#bubble").addClass('hide');
                 $("#bubble").removeAttr("id")
 
-                if (offer_no > 0 && offer_no < 4 && !end_offer && !accept_flag) {
-                    $('#yes-no').show()
-                    $('#rad-yes').prop('checked', true);
-                    $('#rad-no').prop('checked', false);
-                    $('#message').val("Yes")
-                    $('#message').hide()
-                }
-                else {
-                    $('#yes-no').hide()
-                    $('#message').val("")
-                    $('#message').show()
-                }
+
                 $('.chat-body').append('<div class="chat-bubble you">' + ai_response + '</div>');
                 $('.chat-body').animate({ scrollTop: $('.chat-body').height() }, 1000);
 
