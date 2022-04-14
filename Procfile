@@ -1,1 +1,1 @@
-web: gunicorn Fish_class.wsgi:application --log-file -
+web: gunicorn covid_chatbot.wsgi:application --log-file -
