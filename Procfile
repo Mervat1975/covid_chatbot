@@ -1,0 +1,1 @@
+web: gunicorn Fish_class.wsgi:application --log-file -
