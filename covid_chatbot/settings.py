@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-$fein^0!_6@n#0$=azf+cbu$cac53zlpe!!#u35)(-%2h38#9t
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1:8000',
+ALLOWED_HOSTS = ['127.0.0.1',
                  'covid-chatbot-22.herokuapp.com',
                  ]
 
@@ -44,7 +44,7 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
-    'django.middleware.security.SecurityMiddleware'
+    'django.middleware.security.SecurityMiddleware',
     'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
