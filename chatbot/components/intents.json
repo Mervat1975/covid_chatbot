@@ -212,8 +212,8 @@
     {
       "tag": "incubation period",
       "patterns": [
-        " What is the incubation period of COVID-19?",
-        " What is the incubation period ofcoronavirus?"
+        " What is the incubation period ?",
+        " What is the incubation period ?"
       ],
       "responses": [
         "The incubation period ranges from 1 to 14 days. The median is 5 to 6 days between exposure and symptom onset."

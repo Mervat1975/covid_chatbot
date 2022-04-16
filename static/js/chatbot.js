@@ -42,7 +42,7 @@ $(document).ready(function () {
 
     $(".chat-start").html(GetTodayDate());
     $("#startchat").click(function () {
-        $("#startMessage").html(" Hi there ,This Robo, AI robot. Well, let's negotiate?");
+        $("#startMessage").html(" Hi This AI robot. Please be free to ask any query regarding covid, It is my pleasure to help you.");
     });
 
     $(".chat-bot-icon").click()
