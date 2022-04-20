@@ -170,42 +170,24 @@ text-white" style="background-color:#5bc0de">
             </div>
         </div>
 
+        <form method="Post" action="/">{% csrf_token %}
+            <div class="chat-input hide">
+                <input id="message" name='message' type="text" placeholder="Type a message..." value="">
 
-        <div class="chat-input hide">
-            <input id="message" name='message' type="text" placeholder="Type a message..." value="">
-            <!-- -->
-            <div id="yes-no" class="chat-input hide">
 
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="rad-yes" checked>
-                    <label class="form-check-label" for="flexRadioDefault1">
-                        Yes
-                    </label>
+                <div id="sendmessage" class="input-action-icon">
+
+                    <a>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-send">
+                            <line x1="22" y1="2" x2="11" y2="13"></line>
+                            <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                        </svg>
+                    </a>
                 </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="rad-no">
-                    <label class="form-check-label" for="flexRadioDefault2">
-                        No
-                    </label>
-                </div>
-                <div class="form-check">
-
-                </div>
-
             </div>
-            <!--- -->
-            <div id="sendmessage" class="input-action-icon">
-
-                <a>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                        class="feather feather-send">
-                        <line x1="22" y1="2" x2="11" y2="13"></line>
-                        <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
-                    </svg>
-                </a>
-            </div>
-        </div>
+        </form>
         <div class="chat-session-end hide">
             <h5>This chat session has ended</h5>
             <p>Thank you for chatting with us, If you can take a minute and rate this chat:</p>
