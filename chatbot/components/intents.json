@@ -8,7 +8,8 @@
         "Is anyone there?",
         "Hey",
         "Hola",
-        "Hello"
+        "Hello",
+        "Heylo"
       ],
       "responses": [
         "Hello",
@@ -26,7 +27,9 @@
         "See you later",
         "Goodbye",
         "Nice chatting to you, bye",
-        "Till next time"
+        "Till next time",
+        "Cya",
+        "Bubye"
       ],
       "responses": [
         "See you!",
@@ -97,7 +100,7 @@
         "prevent the spread of disease"
       ],
       "responses": [
-        "Stay aware of the latest information on the COVID-19 outbreak, available on the WHO website and through your national and local public health authority. Many countries around the world have seen cases of COVID-19 and several have seen outbreaks. Authorities in China and some other countries have succeeded in slowing or stopping their outbreaks. However, the situation is unpredictable so check regularly for the latest news.You can reduce your chances of being infected or spreading COVID-19 by taking some simple precautions:Regularly and thoroughly clean your hands with an alcohol-based hand rub or wash them with soap and water.Why? Washing your hands with soap and water or using alcohol-based hand rub kills viruses that may be on your hands.Maintain at least 1 metre (3 feet) distance between yourself and anyone who is coughing or sneezing.Why? When someone coughs or sneezes they spray small liquid droplets from their nose or mouth which may contain virus. If you are too close, you can breathe in the droplets, including the COVID-19 virus if the person coughing has the disease.Avoid touching eyes, nose and mouth.Why? Hands touch many surfaces and can pick up viruses. Once contaminated, hands can transfer the virus to your eyes, nose or mouth. From there, the virus can enter your body and can make you sick.Make sure you, and the people around you, follow good respiratory hygiene. This means covering your mouth and nose with your bent elbow or tissue when you cough or sneeze. Then dispose of the used tissue immediately.Why? Droplets spread virus. By following good respiratory hygiene you protect the people around you from viruses such as cold, flu and COVID 19.Stay home if you feel unwell. If you have a fever, cough and difficulty breathing, seek medical attention and call in advance. Follow the directions of your local health authority.Why? National and local authorities will have the most up to date information on the situation in your area. Calling in advance will allow your health care provider to quickly direct you to the right health facility. This will also protect you and help prevent spread of viruses and other infections.Keep up to date on the latest COVID-19 hotspots (cities or local areas where COVID-19 is spreading widely). If possible, avoid traveling to places  â€“ especially if you are an older person or have diabetes, heart or lung disease.Why? You have a higher chance of catching COVID 19 in one of these areas"
+        "Stay aware of the latest information on the COVID-19 outbreak, available on the WHO website and through your national and local public health authority. Many countries around the world have seen cases of COVID-19 and several have seen outbreaks. Authorities in China and some other countries have succeeded in slowing or stopping their outbreaks. However, the situation is unpredictable so check regularly for the latest news.You can reduce your chances of being infected or spreading COVID-19 by taking some simple precautions:Regularly and thoroughly clean your hands with an alcohol-based hand rub or wash them with soap and water.Why? Washing your hands with soap and water or using alcohol-based hand rub kills viruses that may be on your hands.Maintain at least 1 metre (3 feet) distance between yourself and anyone who is coughing or sneezing.Why? When someone coughs or sneezes they spray small liquid droplets from their nose or mouth which may contain virus. If you are too close, you can breathe in the droplets, including the COVID-19 virus if the person coughing has the disease.Avoid touching eyes, nose and mouth.Why? Hands touch many surfaces and can pick up viruses. Once contaminated, hands can transfer the virus to your eyes, nose or mouth. From there, the virus can enter your body and can make you sick.Make sure you, and the people around you, follow good respiratory hygiene. This means covering your mouth and nose with your bent elbow or tissue when you cough or sneeze. Then dispose of the used tissue immediately.Why? Droplets spread virus. By following good respiratory hygiene you protect the people around you from viruses such as cold, flu and COVID 19.Stay home if you feel unwell. If you have a fever, cough and difficulty breathing, seek medical attention and call in advance. Follow the directions of your local health authority.Why? National and local authorities will have the most up to date information on the situation in your area. Calling in advance will allow your health care provider to quickly direct you to the right health facility. This will also protect you and help prevent spread of viruses and other infections.Keep up to date on the latest COVID-19 hotspots (cities or local areas where COVID-19 is spreading widely). If possible, avoid traveling to places  â€' especially if you are an older person or have diabetes, heart or lung disease.Why? You have a higher chance of catching COVID 19 in one of these areas"
       ],
       "context": [
         ""
@@ -223,10 +226,116 @@
       ]
     },
     {
+      "tag": "prevent COVID-19",
+      "patterns": [
+        " How can I prevent COVID-19 ?",
+        " How can I prevent coronavirus ?"
+      ],
+      "responses": [
+        "The best way to prevent COVID-19 is to get vaccinated with an FDA-approved or FDA-authorized COVID-19 vaccine and stay up to date on your COVID-19 vaccines. In addition, the CDC recommends everyday preventive actions to help prevent the spread of COVID-19."
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "difference between a 'three dose primary series' and a 'booster dose'?",
+      "patterns": [
+        " What is the difference between a 'three dose primary series' and a 'booster dose'?",
+        " What is the major difference between a 'three dose primary series' and a 'booster dose'?"
+      ],
+      "responses": [
+        "The reason for a booster dose is to restore protection that may have decreased over time to a level that is no longer effective, in people who initially responded well to a 'complete vaccine series'. This is different than a third dose which might be added to the standard 'primary vaccine series' with the aim of enhancing the immune response and establishing an adequate level of protection for people who did not develop immunity or developed a sub-optimal immune response to a 2-dose primary series. In short – a primary series for most healthy people remains 2-doses, and for these people, a third (booster) dose is offered to boost the immune system. A third-dose primary series is offered to those who are immunocompromised or vulnerable to ensure they have an adequate immune response and are protected. A fourth (booster) dose is then offered to this population to boost their immune response."
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "third (booster) dose of the COVID-19 vaccine",
+      "patterns": [
+        " Why should I get a third (booster) dose of the COVID-19 vaccine ?",
+        " Why should I get a third (booster) dose of the coronavirus vaccine ?"
+      ],
+      "responses": [
+        "Third (booster doses) of mRNA COVID-19 vaccines are readily available to strengthen protection against severe illness and complications due to COVID-19. There is now evidence of a gradual decrease in vaccine effectiveness over time following the second dose. An Ontario study indicates that vaccine effectiveness decreases following a second dose and increases following a third dose. A third, booster dose, of the COVID-19 vaccine will help restore and maintain protection against infection and help reduce your risk of severe illness, complication, or death due to COVID-19."
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "Transportation to COVID-19 vaccination clinics",
+      "patterns": [
+        " Transportation to COVID-19 vaccination clinics and Para Transpo ",
+        " Transportation to coronavirus vaccination clinics and Para Transpo "
+      ],
+      "responses": [
+        "Residents who are eligible for vaccination are encouraged to make a transportation plan in advance of their appointment. This could include using public transit or asking a friend, family member or caregiver to provide a ride to your designated vaccination clinic. There are several support services available to assist in getting to and from your appointment: Use the Travel Planner to plan your trip to any of the vaccine clinics located across the city. If you are a Para Transpo user, you can book your ride through the COVID-19 Vaccination Trip Reservation telephone line at 613-842-3600 between the hours of 10 am and 8 pm. If you are a resident age 65 years or older or an adult with disabilities you can request a ride through Ottawa Community Transportation after you have booked your appointment. Ottawa Community Transportation will contact you directly to confirm your transportation.If you or someone you know requires transportation but do not have online access, please contact 211. A representative will assist in completing the online form on your behalf. Please have your vaccine booking confirmation number available when calling. If you are not eligible for support through Para Transpo or Ottawa Community Transportation, you can request a ride with a volunteer driver through the VaxAide online form, or by calling 613-869-8221. COVID-19 protocols are in place to ensure the safety of the rider and the driver, and wearing a mask is mandatory."
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "appointment if I do not have an Ontario health card",
+      "patterns": [
+        " How do I book an appointment if I do not have an Ontario health card or have a red and white card ?",
+        " How do I have an appointment if I do not have an Ontario health card or have a red and white card ?"
+      ],
+      "responses": [
+        "If you have confirmed that you are eligible to receive a vaccine but have a red and white Ontario health card, please call the Province of Ontario’s Provincial Vaccine Booking Line at 1-833-943-3900 (TTY 1-866-797-0007) to book your appointment. This line is available 8 am to 8 pm, 7 days a week. Information is available in more than 300 languages. If you do not have a valid health card but are eligible for a vaccine, please call Ottawa Public Health at 613-691-5505 to book an appointment."
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "COVID-19 vaccine different from the influenza (flu) vaccine",
+      "patterns": [
+        " How is the COVID-19 vaccine different from the influenza (flu) vaccine ?",
+        " How is the coronavirus vaccine different from the influenza (flu) vaccine ?"
+      ],
+      "responses": [
+        "The COVID-19 and influenza vaccines are separate products. The COVID-19 vaccine will not protect you against influenza. The seasonal influenza vaccine changes every flu season. When you receive your annual flu vaccine, you are protected only from the specific influenza strains that are circulating for that given season that are covered by the vaccine. The flu vaccine won’t protect you against COVID-19."
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "COVID-19 vaccine cause a COVID-19 infection",
+      "patterns": [
+        " Can the COVID-19 vaccine cause a COVID-19 infection ?",
+        " Can the coronavirus vaccine cause a COVID-19 infection ?"
+      ],
+      "responses": [
+        "No. None of the COVID-19 vaccines currently approved for use in Canada use the live virus that causes COVID-19. There are several different types of vaccines in development. The goal of each of the vaccines is to teach the immune system how to recognize and fight the virus that causes COVID-19. Sometimes this process can cause symptoms, such as fever. These symptoms are normal and are a sign of the immune response to vaccine. It usually takes the body a few weeks to build immunity after receiving a vaccine. It is possible that someone could become infected with the COVID-19 virus before or just after getting the vaccine and get sick. This happens because the vaccine has not had enough time to provide protection in the body. Learn more about COVID-19."
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "Why would I want to get the COVID-19 vaccine",
+      "patterns": [
+        " Why would I want to get the COVID-19 vaccine if we are still required to follow public health measures even after vaccination ?",
+        " Why would I want to get the coronavirus vaccine if we are still required to follow public health measures even after vaccination ?"
+      ],
+      "responses": [
+        "The main reason to get vaccinated is to protect your own health. Vaccines add a valuable layer of protection against COVID-19 infection which can lead to severe illness and death. More people vaccinated means fewer COVID-19 infections in the community. This is important in helping to reduce the burden on the health care system. This would mean less people in the hospital, less patients in ICU and more capacity for hospitals to resume surgeries and treatments. At this time, we do know that getting the vaccine prevents people from getting seriously ill from COVID-19, but that they could still pass it on to others. What we have learned from other vaccines is when more people are vaccinated and immune, this should eventually mean a higher likelihood of indirect protection to those who are not immune to the disease."
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
       "tag": "thanks",
       "patterns": [
         "Thanks",
         "Thank you",
+        "Thanks alot",
+        "Thank you so much",
         "That's helpful",
         "Awesome, thanks",
         "Thanks for helping me"
