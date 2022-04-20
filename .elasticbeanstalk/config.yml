@@ -2,6 +2,8 @@ branch-defaults:
   default:
     environment: Covidchatbot-env
     group_suffix: null
+  master:
+    environment: Covidchatbot-env
 global:
   application_name: covid_chatbot
   branch: null
